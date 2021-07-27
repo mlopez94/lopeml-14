@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS lopeml_db;
+
+CREATE DATABASE lopeml_db;
