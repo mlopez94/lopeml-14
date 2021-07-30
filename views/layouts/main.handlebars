@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Tech Blog</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
@@ -15,14 +16,16 @@
         <a href="/">The Tech Blog</a>
       </h1>
       <nav>
+        <div class="w3-bar">
         {{#if loggedIn}}
-        <a href="/">Home</a>
-        <a href="/dashboard">Dashboard</a>
-        <button id="logout" class="btn-no-style">Logout</button>
+        <button class="w3-button w3-khaki" id="button-color"><a href="/">Home</a></button>
+        <button class="w3-button w3-khaki" id="button-color"><a href="/dashboard">Dashboard</a></button>
+        <button id="logout" class="w3-button w3-khaki" id="button-color">Logout</button>
         {{else}}
         <a href="/">Home</a>
         <a href="/login">Login</a>
         {{/if}}
+        </div>
       </nav>
     </header>
     <main>
